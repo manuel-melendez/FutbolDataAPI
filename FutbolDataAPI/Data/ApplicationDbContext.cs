@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FutbolDataAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace FutbolDataAPI.Data
 {
@@ -7,5 +8,8 @@ namespace FutbolDataAPI.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
+
+        public DbSet<Player> Players { get; set; }
+        public DbSet<Club> Clubs { get; set; }
     }
 }
