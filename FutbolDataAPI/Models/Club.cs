@@ -6,9 +6,12 @@ namespace FutbolDataAPI.Models
     {
         [Key]
         public int ClubId { get; set; }
+        [Required]
         public string StadiumName { get; set; }
+        [Required]
         public string City { get; set; }
+        [Required]
         public string Country { get; set; }
-        public ICollection<Player> Players { get; set; }
+        public ICollection<Player> Players { get; set; } = new List<Player>();
     }
 }
