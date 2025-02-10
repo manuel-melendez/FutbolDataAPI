@@ -1,6 +1,7 @@
 ﻿using FutbolDataAPI.Data;
 using FutbolDataAPI.Models;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace FutbolDataAPI.Repositories
 {
@@ -23,6 +24,7 @@ namespace FutbolDataAPI.Repositories
 
         public async Task DeleteClub(int clubId)
         {
+            Log.Information("Repo: Deleting club with id {clubId}", clubId);
             var club = await _context.Clubs.FirstOrDefaultAsync(c => c.ClubId == clubId);
             if (club != null)
             {
@@ -33,21 +35,25 @@ namespace FutbolDataAPI.Repositories
 
         public async Task<Club> GetClubById(int clubId)
         {
+            Log.Information("Repo: Getting club with id {clubId}", clubId);
             var club = await _context.Clubs.FirstOrDefaultAsync(c => c.ClubId == clubId);
             return club;
         }
 
         public async Task<IEnumerable<Club>> GetClubs()
         {
-            var clubs = await _context.Clubs.ToListAsync();
+            Log.Information("Repo: Getting all clubs");
+            var clubs = await _context.Clubs.Include(c => c.Players).ToListAsync();
             return clubs;
         }
 
-        public async Task<Club> UpdateClub(Club club)
+        public async Task<Club> UpdateClub(int clubId, Club club)
         {
-            var existingClub = await _context.Clubs.FirstOrDefaultAsync(c => c.ClubId == club.ClubId);
+            Log.Information("Repo: Updating club {@club}", club);
+            var existingClub = await _context.Clubs.FirstOrDefaultAsync(c => c.ClubId == clubId);
             if (existingClub != null)
             {
+                existingClub.Name = club.Name;
                 existingClub.StadiumName = club.StadiumName;
                 existingClub.City = club.City;
                 existingClub.Country = club.Country;
@@ -56,6 +62,11 @@ namespace FutbolDataAPI.Repositories
                 return existingClub;
             }
             return null;
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 }

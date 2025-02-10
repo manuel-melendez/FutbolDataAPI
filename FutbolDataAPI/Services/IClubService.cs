@@ -7,7 +7,8 @@ namespace FutbolDataAPI.Services
         Task<IEnumerable<Club>> GetClubs();
         Task<Club> GetClubById(int clubId);
         Task<Club> CreateClub(Club club);
-        Task<Club> UpdateClub(Club club);
+        Task<Club> UpdateClub(int clubId, Club club);
         Task DeleteClub(int clubId);
+        Task AddPlayerToClub(int clubId, int playerId);
     }
 }
