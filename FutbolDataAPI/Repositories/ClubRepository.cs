@@ -1,6 +1,7 @@
 ﻿using FutbolDataAPI.Data;
 using FutbolDataAPI.Models;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace FutbolDataAPI.Repositories
 {
@@ -23,6 +24,7 @@ namespace FutbolDataAPI.Repositories
 
         public async Task DeleteClub(int clubId)
         {
+            Log.Information("Repo: Deleting club with id {clubId}", clubId);
             var club = await _context.Clubs.FirstOrDefaultAsync(c => c.ClubId == clubId);
             if (club != null)
             {
@@ -33,18 +35,21 @@ namespace FutbolDataAPI.Repositories
 
         public async Task<Club> GetClubById(int clubId)
         {
+            Log.Information("Repo: Getting club with id {clubId}", clubId);
             var club = await _context.Clubs.FirstOrDefaultAsync(c => c.ClubId == clubId);
             return club;
         }
 
         public async Task<IEnumerable<Club>> GetClubs()
         {
+            Log.Information("Repo: Getting all clubs");
             var clubs = await _context.Clubs.ToListAsync();
             return clubs;
         }
 
         public async Task<Club> UpdateClub(Club club)
         {
+            Log.Information("Repo: Updating club {@club}", club);
             var existingClub = await _context.Clubs.FirstOrDefaultAsync(c => c.ClubId == club.ClubId);
             if (existingClub != null)
             {
