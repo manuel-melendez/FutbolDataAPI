@@ -1,0 +1,74 @@
+2025-02-10 15:36:16.611 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 15:36:16.728 -05:00 [INF] Service: Getting all clubs
+2025-02-10 15:36:16.736 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 15:39:48.508 -05:00 [INF] Controller: Creating club {"ClubId":0,"Name":"Liverpool FC","StadiumName":"Anfield","City":"Liverpool","Country":"England","Players":[],"$type":"Club"}
+2025-02-10 15:39:48.654 -05:00 [INF] Service: Creating club {"ClubId":0,"Name":"Liverpool FC","StadiumName":"Anfield","City":"Liverpool","Country":"England","Players":[],"$type":"Club"}
+2025-02-10 15:40:53.209 -05:00 [INF] Controller: Creating club {"ClubId":0,"Name":"Liverpool FC","StadiumName":"Anfield","City":"Liverpool","Country":"England","Players":[],"$type":"Club"}
+2025-02-10 15:40:53.246 -05:00 [INF] Service: Creating club {"ClubId":0,"Name":"Liverpool FC","StadiumName":"Anfield","City":"Liverpool","Country":"England","Players":[],"$type":"Club"}
+2025-02-10 15:42:06.052 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 15:42:06.057 -05:00 [INF] Service: Getting all clubs
+2025-02-10 15:42:06.065 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 15:43:35.015 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 15:43:35.120 -05:00 [INF] Service: Getting all clubs
+2025-02-10 15:43:35.129 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 15:43:49.619 -05:00 [INF] Service: Getting club with id 2
+2025-02-10 15:43:49.638 -05:00 [INF] Repo: Getting club with id 2
+2025-02-10 15:43:50.099 -05:00 [INF] Controller: Deleting club with id 2
+2025-02-10 15:43:50.106 -05:00 [INF] Service: Deleting club with id 2
+2025-02-10 15:43:50.114 -05:00 [INF] Repo: Deleting club with id 2
+2025-02-10 15:44:08.221 -05:00 [INF] Controller: Getting club with id 2
+2025-02-10 15:44:08.224 -05:00 [INF] Service: Getting club with id 2
+2025-02-10 15:44:08.225 -05:00 [INF] Repo: Getting club with id 2
+2025-02-10 15:44:08.430 -05:00 [WRN] Controller: Club with id 2 not found
+2025-02-10 15:44:11.686 -05:00 [INF] Controller: Getting club with id 1
+2025-02-10 15:44:11.689 -05:00 [INF] Service: Getting club with id 1
+2025-02-10 15:44:11.695 -05:00 [INF] Repo: Getting club with id 1
+2025-02-10 15:45:02.627 -05:00 [INF] Controller: Creating club {"ClubId":0,"Name":"FC Barcelona","StadiumName":"Camp Nou","City":"Barcelona","Country":"Spain","Players":[],"$type":"Club"}
+2025-02-10 15:45:02.671 -05:00 [INF] Service: Creating club {"ClubId":0,"Name":"FC Barcelona","StadiumName":"Camp Nou","City":"Barcelona","Country":"Spain","Players":[],"$type":"Club"}
+2025-02-10 15:45:14.256 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 15:45:14.260 -05:00 [INF] Service: Getting all clubs
+2025-02-10 15:45:14.263 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 15:48:14.597 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 15:48:14.711 -05:00 [INF] Service: Getting all clubs
+2025-02-10 15:48:14.722 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 15:49:48.516 -05:00 [INF] Controller: Creating club {"ClubId":0,"Name":"Chelsea FC","StadiumName":"Stamford Bridge","City":"London","Country":"England","Players":[],"$type":"Club"}
+2025-02-10 15:49:48.574 -05:00 [INF] Service: Creating club {"ClubId":0,"Name":"Chelsea FC","StadiumName":"Stamford Bridge","City":"London","Country":"England","Players":[],"$type":"Club"}
+2025-02-10 15:51:04.690 -05:00 [INF] Controller: Creating club {"ClubId":0,"Name":"Chelsea FC","StadiumName":"Stamford Bridge","City":"London","Country":"England","Players":[],"$type":"Club"}
+2025-02-10 15:51:04.732 -05:00 [INF] Service: Creating club {"ClubId":0,"Name":"Chelsea FC","StadiumName":"Stamford Bridge","City":"London","Country":"England","Players":[],"$type":"Club"}
+2025-02-10 15:54:48.491 -05:00 [INF] Controller: Creating club {"ClubId":0,"Name":"string","StadiumName":"string","City":"string","Country":"string","Players":[],"$type":"Club"}
+2025-02-10 15:54:48.678 -05:00 [INF] Service: Creating club {"ClubId":0,"Name":"string","StadiumName":"string","City":"string","Country":"string","Players":[],"$type":"Club"}
+2025-02-10 15:55:04.344 -05:00 [INF] Service: Getting club with id 6
+2025-02-10 15:55:04.354 -05:00 [INF] Repo: Getting club with id 6
+2025-02-10 15:55:05.578 -05:00 [INF] Controller: Deleting club with id 6
+2025-02-10 15:55:05.584 -05:00 [INF] Service: Deleting club with id 6
+2025-02-10 15:55:05.590 -05:00 [INF] Repo: Deleting club with id 6
+2025-02-10 15:55:08.608 -05:00 [INF] Service: Getting club with id 5
+2025-02-10 15:55:08.615 -05:00 [INF] Repo: Getting club with id 5
+2025-02-10 15:55:08.688 -05:00 [INF] Controller: Deleting club with id 5
+2025-02-10 15:55:08.692 -05:00 [INF] Service: Deleting club with id 5
+2025-02-10 15:55:08.697 -05:00 [INF] Repo: Deleting club with id 5
+2025-02-10 15:55:10.785 -05:00 [INF] Service: Getting club with id 5
+2025-02-10 15:55:10.790 -05:00 [INF] Repo: Getting club with id 5
+2025-02-10 15:55:10.822 -05:00 [WRN] Controller: Club with id 5 not found
+2025-02-10 15:55:19.099 -05:00 [INF] Controller: Getting club with id 2
+2025-02-10 15:55:19.104 -05:00 [INF] Service: Getting club with id 2
+2025-02-10 15:55:19.109 -05:00 [INF] Repo: Getting club with id 2
+2025-02-10 15:55:19.138 -05:00 [WRN] Controller: Club with id 2 not found
+2025-02-10 15:55:24.397 -05:00 [INF] Controller: Getting club with id 3
+2025-02-10 15:55:24.403 -05:00 [INF] Service: Getting club with id 3
+2025-02-10 15:55:24.408 -05:00 [INF] Repo: Getting club with id 3
+2025-02-10 15:59:05.725 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 15:59:05.834 -05:00 [INF] Service: Getting all clubs
+2025-02-10 15:59:05.839 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 15:59:56.340 -05:00 [INF] Controller: Updating club {"ClubId":3,"Name":"Spotify FC Barcelona","StadiumName":"Camp Nou","City":"Barcelona","Country":"Spain","Players":[],"$type":"Club"}
+2025-02-10 15:59:56.400 -05:00 [INF] Service: Updating club {"ClubId":3,"Name":"Spotify FC Barcelona","StadiumName":"Camp Nou","City":"Barcelona","Country":"Spain","Players":[],"$type":"Club"}
+2025-02-10 15:59:56.442 -05:00 [INF] Repo: Updating club {"ClubId":3,"Name":"Spotify FC Barcelona","StadiumName":"Camp Nou","City":"Barcelona","Country":"Spain","Players":[],"$type":"Club"}
+2025-02-10 16:00:02.641 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 16:00:02.646 -05:00 [INF] Service: Getting all clubs
+2025-02-10 16:00:02.651 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 16:00:43.302 -05:00 [INF] Controller: Updating club {"ClubId":3,"Name":"FC Barcelona","StadiumName":"Spotify Camp Nou","City":"Barcelona","Country":"Spain","Players":[],"$type":"Club"}
+2025-02-10 16:00:43.338 -05:00 [INF] Service: Updating club {"ClubId":3,"Name":"FC Barcelona","StadiumName":"Spotify Camp Nou","City":"Barcelona","Country":"Spain","Players":[],"$type":"Club"}
+2025-02-10 16:00:43.371 -05:00 [INF] Repo: Updating club {"ClubId":3,"Name":"FC Barcelona","StadiumName":"Spotify Camp Nou","City":"Barcelona","Country":"Spain","Players":[],"$type":"Club"}
+2025-02-10 16:00:58.527 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 16:00:58.532 -05:00 [INF] Service: Getting all clubs
+2025-02-10 16:00:58.537 -05:00 [INF] Repo: Getting all clubs

@@ -47,12 +47,13 @@ namespace FutbolDataAPI.Repositories
             return clubs;
         }
 
-        public async Task<Club> UpdateClub(Club club)
+        public async Task<Club> UpdateClub(int clubId, Club club)
         {
             Log.Information("Repo: Updating club {@club}", club);
-            var existingClub = await _context.Clubs.FirstOrDefaultAsync(c => c.ClubId == club.ClubId);
+            var existingClub = await _context.Clubs.FirstOrDefaultAsync(c => c.ClubId == clubId);
             if (existingClub != null)
             {
+                existingClub.Name = club.Name;
                 existingClub.StadiumName = club.StadiumName;
                 existingClub.City = club.City;
                 existingClub.Country = club.Country;

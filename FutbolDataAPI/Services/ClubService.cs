@@ -39,10 +39,10 @@ namespace FutbolDataAPI.Services
             return clubs;
         }
 
-        public async Task<Club> UpdateClub(Club club)
+        public async Task<Club> UpdateClub(int clubId, Club club)
         {
             Log.Information("Service: Updating club {@club}", club);
-            var updatedClub = await _clubRepository.UpdateClub(club);
+            var updatedClub = await _clubRepository.UpdateClub(clubId, club);
             return updatedClub;
         }
     }
