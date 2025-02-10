@@ -46,10 +46,10 @@ namespace FutbolDataAPI.Repositories
             return players;
         }
 
-        public async Task<Player> UpdatePlayer(Player player)
+        public async Task<Player> UpdatePlayer(int playerId, Player player)
         {
             Log.Information("Repo: Updating player {@player}", player);
-            var existingPlayer = await _context.Players.FirstOrDefaultAsync(p => p.PlayerId == player.PlayerId);
+            var existingPlayer = await _context.Players.FirstOrDefaultAsync(p => p.PlayerId == playerId);
             if (existingPlayer != null)
             {
                 existingPlayer.FirstName = player.FirstName;

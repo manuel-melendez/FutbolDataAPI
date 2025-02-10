@@ -72,3 +72,77 @@
 2025-02-10 16:00:58.527 -05:00 [INF] Controller: Getting all clubs
 2025-02-10 16:00:58.532 -05:00 [INF] Service: Getting all clubs
 2025-02-10 16:00:58.537 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 16:09:55.462 -05:00 [INF] Controller: Getting all players
+2025-02-10 16:09:55.563 -05:00 [INF] Service: Getting all players
+2025-02-10 16:09:55.568 -05:00 [INF] Repo: Getting all players
+2025-02-10 16:21:34.459 -05:00 [INF] Controller: Creating player {"PlayerId":0,"FirstName":"string","LastName":"string","Position":"string","Number":0,"ClubId":null,"Club":null,"$type":"Player"}
+2025-02-10 16:21:34.609 -05:00 [INF] Service: Creating player {"PlayerId":0,"FirstName":"string","LastName":"string","Position":"string","Number":0,"ClubId":null,"Club":null,"$type":"Player"}
+2025-02-10 16:21:34.636 -05:00 [INF] Repo: Creating player {"PlayerId":0,"FirstName":"string","LastName":"string","Position":"string","Number":0,"ClubId":null,"Club":null,"$type":"Player"}
+2025-02-10 16:21:55.511 -05:00 [INF] Controller: Getting all players
+2025-02-10 16:21:55.520 -05:00 [INF] Service: Getting all players
+2025-02-10 16:21:55.528 -05:00 [INF] Repo: Getting all players
+2025-02-10 16:32:05.848 -05:00 [INF] Controller: Getting all players
+2025-02-10 16:32:05.942 -05:00 [INF] Service: Getting all players
+2025-02-10 16:32:05.948 -05:00 [INF] Repo: Getting all players
+2025-02-10 16:34:23.636 -05:00 [INF] Controller: Creating player {"PlayerId":0,"FirstName":"Lionel","LastName":"Messi","Position":"CM","Number":10,"ClubId":null,"Club":null,"$type":"Player"}
+2025-02-10 16:34:23.694 -05:00 [INF] Service: Creating player {"PlayerId":0,"FirstName":"Lionel","LastName":"Messi","Position":"CM","Number":10,"ClubId":null,"Club":null,"$type":"Player"}
+2025-02-10 16:34:23.728 -05:00 [INF] Repo: Creating player {"PlayerId":0,"FirstName":"Lionel","LastName":"Messi","Position":"CM","Number":10,"ClubId":null,"Club":null,"$type":"Player"}
+2025-02-10 16:34:29.351 -05:00 [INF] Controller: Getting all players
+2025-02-10 16:34:29.356 -05:00 [INF] Service: Getting all players
+2025-02-10 16:34:29.362 -05:00 [INF] Repo: Getting all players
+2025-02-10 16:34:41.648 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 16:34:41.658 -05:00 [INF] Service: Getting all clubs
+2025-02-10 16:34:41.666 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 16:35:04.470 -05:00 [INF] Service: Getting club with id 3
+2025-02-10 16:35:04.482 -05:00 [INF] Repo: Getting club with id 3
+2025-02-10 16:35:04.808 -05:00 [INF] Service: Getting player with id 2
+2025-02-10 16:35:04.821 -05:00 [INF] Repo: Getting player with id 2
+2025-02-10 16:35:04.883 -05:00 [INF] Controller: Adding player with id 2 to club with id 3
+2025-02-10 16:35:04.892 -05:00 [INF] Service: Adding player with id 2 to club with id 3
+2025-02-10 16:35:04.899 -05:00 [INF] Repo: Getting club with id 3
+2025-02-10 16:35:04.931 -05:00 [INF] Repo: Getting player with id 2
+2025-02-10 16:35:09.684 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 16:35:09.692 -05:00 [INF] Service: Getting all clubs
+2025-02-10 16:35:09.699 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 16:35:21.903 -05:00 [INF] Controller: Getting all players
+2025-02-10 16:35:21.909 -05:00 [INF] Service: Getting all players
+2025-02-10 16:35:21.914 -05:00 [INF] Repo: Getting all players
+2025-02-10 16:46:32.996 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 16:46:33.115 -05:00 [INF] Service: Getting all clubs
+2025-02-10 16:46:33.124 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 16:49:08.528 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 16:49:08.658 -05:00 [INF] Service: Getting all clubs
+2025-02-10 16:49:08.664 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 16:51:24.411 -05:00 [INF] Controller: Getting all players
+2025-02-10 16:51:24.529 -05:00 [INF] Service: Getting all players
+2025-02-10 16:51:24.540 -05:00 [INF] Repo: Getting all players
+2025-02-10 16:51:55.956 -05:00 [INF] Service: Getting player with id 1
+2025-02-10 16:51:55.989 -05:00 [INF] Repo: Getting player with id 1
+2025-02-10 16:51:56.566 -05:00 [INF] Controller: Deleting player with id 1
+2025-02-10 16:51:56.571 -05:00 [INF] Service: Deleting player with id 1
+2025-02-10 16:51:56.579 -05:00 [INF] Repo: Deleting player with id 1
+2025-02-10 16:52:00.001 -05:00 [INF] Service: Getting player with id 1
+2025-02-10 16:52:00.006 -05:00 [INF] Repo: Getting player with id 1
+2025-02-10 16:52:00.234 -05:00 [WRN] Controller: Player with id 1 not found
+2025-02-10 16:53:02.291 -05:00 [INF] Controller: Creating player {"PlayerId":0,"FirstName":"Virgil","LastName":"Van Dijk","Position":"CB","Number":4,"ClubId":null,"Club":null,"$type":"Player"}
+2025-02-10 16:53:02.352 -05:00 [INF] Service: Creating player {"PlayerId":0,"FirstName":"Virgil","LastName":"Van Dijk","Position":"CB","Number":4,"ClubId":null,"Club":null,"$type":"Player"}
+2025-02-10 16:53:02.414 -05:00 [INF] Repo: Creating player {"PlayerId":0,"FirstName":"Virgil","LastName":"Van Dijk","Position":"CB","Number":4,"ClubId":null,"Club":null,"$type":"Player"}
+2025-02-10 16:53:13.643 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 16:53:13.652 -05:00 [INF] Service: Getting all clubs
+2025-02-10 16:53:13.660 -05:00 [INF] Repo: Getting all clubs
+2025-02-10 16:53:32.896 -05:00 [INF] Service: Getting club with id 1
+2025-02-10 16:53:32.906 -05:00 [INF] Repo: Getting club with id 1
+2025-02-10 16:53:32.967 -05:00 [INF] Service: Getting player with id 4
+2025-02-10 16:53:32.976 -05:00 [INF] Repo: Getting player with id 4
+2025-02-10 16:53:33.004 -05:00 [WRN] Controller: Club or Player not found
+2025-02-10 16:54:02.759 -05:00 [INF] Service: Getting club with id 1
+2025-02-10 16:54:02.768 -05:00 [INF] Repo: Getting club with id 1
+2025-02-10 16:54:02.788 -05:00 [INF] Service: Getting player with id 3
+2025-02-10 16:54:02.792 -05:00 [INF] Repo: Getting player with id 3
+2025-02-10 16:54:02.808 -05:00 [INF] Controller: Adding player with id 3 to club with id 1
+2025-02-10 16:54:02.817 -05:00 [INF] Service: Adding player with id 3 to club with id 1
+2025-02-10 16:54:02.824 -05:00 [INF] Repo: Getting club with id 1
+2025-02-10 16:54:02.867 -05:00 [INF] Repo: Getting player with id 3
+2025-02-10 16:54:07.784 -05:00 [INF] Controller: Getting all clubs
+2025-02-10 16:54:07.789 -05:00 [INF] Service: Getting all clubs
+2025-02-10 16:54:07.795 -05:00 [INF] Repo: Getting all clubs

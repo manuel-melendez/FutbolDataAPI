@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace FutbolDataAPI.Models
 {
@@ -16,7 +17,8 @@ namespace FutbolDataAPI.Models
         [Required]
         public int Number { get; set; }
         [ForeignKey("Club")]
-        public int ClubId { get; set; }
-        public Club Club { get; set; }
+        public int? ClubId { get; set; }
+        [JsonIgnore]
+        public Club? Club { get; set; }
     }
 }

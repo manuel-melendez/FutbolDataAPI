@@ -10,10 +10,12 @@ namespace FutbolDataAPI.Controllers
     public class ClubController : ControllerBase
     {
         private readonly IClubService _clubService;
+        private readonly IPlayerService _playerService;
 
-        public ClubController(IClubService clubService)
+        public ClubController(IClubService clubService, IPlayerService playerService)
         {
             _clubService = clubService;
+            _playerService = playerService;
         }
 
         [HttpGet]
@@ -69,6 +71,28 @@ namespace FutbolDataAPI.Controllers
 
             Log.Information("Controller: Deleting club with id {clubId}", clubId);
             await _clubService.DeleteClub(clubId);
+            return NoContent();
+        }
+
+        [HttpPost("{clubId}/players/{playerId}")]
+        public async Task<IActionResult> AddPlayerToClub(int clubId, int playerId)
+        {
+            var club = await _clubService.GetClubById(clubId);
+            var player = await _playerService.GetPlayerById(playerId);
+            if (player == null)
+            {
+                Log.Warning("Controller: Player with id {playerId} not found", playerId);
+                return NotFound();
+            }
+
+            if (club == null)
+            {
+                Log.Warning("Controller: Club with id {clubId} not found", clubId);
+                return NotFound();
+            }
+
+            Log.Information("Controller: Adding player with id {playerId} to club with id {clubId}", playerId, clubId);
+            await _clubService.AddPlayerToClub(clubId, playerId);
             return NoContent();
         }
     }

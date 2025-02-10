@@ -9,5 +9,6 @@ namespace FutbolDataAPI.Repositories
         Task<Club> CreateClub(Club club);
         Task<Club> UpdateClub(int clubId, Club club);
         Task DeleteClub(int clubId);
+        Task SaveChangesAsync();
     }
 }

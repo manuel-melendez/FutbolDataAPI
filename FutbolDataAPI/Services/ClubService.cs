@@ -7,10 +7,12 @@ namespace FutbolDataAPI.Services
     public class ClubService : IClubService
     {
         private readonly IClubRepository _clubRepository;
+        private readonly IPlayerRepository _playerRepository;
 
-        public ClubService(IClubRepository clubRepository)
+        public ClubService(IClubRepository clubRepository, IPlayerRepository playerRepository)
         {
             _clubRepository = clubRepository;
+            _playerRepository = playerRepository;
         }
         public async Task<Club> CreateClub(Club club)
         {
@@ -44,6 +46,19 @@ namespace FutbolDataAPI.Services
             Log.Information("Service: Updating club {@club}", club);
             var updatedClub = await _clubRepository.UpdateClub(clubId, club);
             return updatedClub;
+        }
+
+        public async Task AddPlayerToClub(int clubId, int playerId)
+        {
+            Log.Information("Service: Adding player with id {playerId} to club with id {clubId}", playerId, clubId);
+            var club = await _clubRepository.GetClubById(clubId);
+            var player = await _playerRepository.GetPlayerById(playerId);
+
+            if (club != null && player != null)
+            {
+                club.Players.Add(player);
+                await _clubRepository.SaveChangesAsync();
+            }
         }
     }
 }

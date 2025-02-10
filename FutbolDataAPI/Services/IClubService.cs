@@ -9,5 +9,6 @@ namespace FutbolDataAPI.Services
         Task<Club> CreateClub(Club club);
         Task<Club> UpdateClub(int clubId, Club club);
         Task DeleteClub(int clubId);
+        Task AddPlayerToClub(int clubId, int playerId);
     }
 }

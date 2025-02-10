@@ -40,10 +40,10 @@ namespace FutbolDataAPI.Services
             return players;
         }
 
-        public async Task<Player> UpdatePlayer(Player player)
+        public async Task<Player> UpdatePlayer(int playerId, Player player)
         {
             Log.Information("Service: Updating player {@player}", player);
-            var existingPlayer = await _playerRepository.UpdatePlayer(player);
+            var existingPlayer = await _playerRepository.UpdatePlayer(playerId, player);
             return existingPlayer;
         }
     }

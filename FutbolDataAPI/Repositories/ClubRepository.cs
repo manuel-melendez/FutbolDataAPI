@@ -43,7 +43,7 @@ namespace FutbolDataAPI.Repositories
         public async Task<IEnumerable<Club>> GetClubs()
         {
             Log.Information("Repo: Getting all clubs");
-            var clubs = await _context.Clubs.ToListAsync();
+            var clubs = await _context.Clubs.Include(c => c.Players).ToListAsync();
             return clubs;
         }
 
@@ -62,6 +62,11 @@ namespace FutbolDataAPI.Repositories
                 return existingClub;
             }
             return null;
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 }
