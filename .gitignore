@@ -1,0 +1,22 @@
+# Build and IDE files
+bin/
+obj/
+out/
+.vscode/
+.vs/
+*.suo
+*.user
+
+# Logs and Debugging
+*.log
+*.cache
+
+# Secrets and Configs
+appsettings.json
+appsettings.*.json
+secrets.json
+launchSettings.json
+.env
+
+# Docker
+.dockerignore
