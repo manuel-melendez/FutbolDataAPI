@@ -1,5 +1,6 @@
 using FutbolDataAPI.Data;
 using FutbolDataAPI.Repositories;
+using FutbolDataAPI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<IPlayerRepository, PlayerRepository>();
 builder.Services.AddScoped<IClubRepository, ClubRepository>();
+
+builder.Services.AddScoped<IPlayerService, PlayerService>();
+builder.Services.AddScoped<IClubService, ClubService>();
 
 var app = builder.Build();
 
