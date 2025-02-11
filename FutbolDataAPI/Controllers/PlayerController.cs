@@ -1,4 +1,6 @@
-﻿using FutbolDataAPI.Models;
+﻿using AutoMapper;
+using FutbolDataAPI.Models;
+using FutbolDataAPI.Models.DTOs;
 using FutbolDataAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
@@ -10,10 +12,12 @@ namespace FutbolDataAPI.Controllers
     public class PlayerController : ControllerBase
     {
         private readonly IPlayerService _playerService;
+        private readonly IMapper _mapper;
 
-        public PlayerController(IPlayerService playerService)
+        public PlayerController(IPlayerService playerService, IMapper mapper)
         {
             _playerService = playerService;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -21,7 +25,8 @@ namespace FutbolDataAPI.Controllers
         {
             Log.Information("Controller: Getting all players");
             var players = await _playerService.GetPlayers();
-            return Ok(players);
+            var playersDto = _mapper.Map<IEnumerable<PlayerDTO>>(players);
+            return Ok(playersDto);
         }
 
         [HttpGet("{playerId}")]

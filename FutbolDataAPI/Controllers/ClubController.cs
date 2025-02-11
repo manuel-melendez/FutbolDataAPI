@@ -1,4 +1,6 @@
-﻿using FutbolDataAPI.Models;
+﻿using AutoMapper;
+using FutbolDataAPI.Models;
+using FutbolDataAPI.Models.DTOs;
 using FutbolDataAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
@@ -11,11 +13,13 @@ namespace FutbolDataAPI.Controllers
     {
         private readonly IClubService _clubService;
         private readonly IPlayerService _playerService;
+        private readonly IMapper _mapper;
 
-        public ClubController(IClubService clubService, IPlayerService playerService)
+        public ClubController(IClubService clubService, IPlayerService playerService, IMapper mapper)
         {
             _clubService = clubService;
             _playerService = playerService;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -23,7 +27,8 @@ namespace FutbolDataAPI.Controllers
         {
             Log.Information("Controller: Getting all clubs");
             var clubs = await _clubService.GetClubs();
-            return Ok(clubs);
+            var clubsDto = _mapper.Map<IEnumerable<ClubDTO>>(clubs);
+            return Ok(clubsDto);
         }
 
         [HttpGet("{clubId}")]
@@ -93,6 +98,28 @@ namespace FutbolDataAPI.Controllers
 
             Log.Information("Controller: Adding player with id {playerId} to club with id {clubId}", playerId, clubId);
             await _clubService.AddPlayerToClub(clubId, playerId);
+            return NoContent();
+        }
+
+        [HttpDelete("{clubId}/players/{playerId}")]
+        public async Task<IActionResult> RemovePlayerFromClub(int clubId, int playerId)
+        {
+            var player = await _playerService.GetPlayerById(playerId);
+            var club = await _clubService.GetClubById(clubId);
+
+            if (player == null)
+            {
+                Log.Warning("Controller: Player with id {playerId} not found", playerId);
+                return NotFound();
+            }
+
+            if (club == null)
+            {
+                Log.Warning("Controller: Club with id {clubId} not found", clubId);
+                return NotFound();
+            }
+
+            await _clubService.RemovePlayerFromClub(clubId, playerId);
             return NoContent();
         }
     }

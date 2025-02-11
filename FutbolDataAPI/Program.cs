@@ -1,5 +1,6 @@
 using FutbolDataAPI.Data;
 using FutbolDataAPI.Extensions;
+using FutbolDataAPI.Profiles;
 using FutbolDataAPI.Repositories;
 using FutbolDataAPI.Services;
 using Microsoft.EntityFrameworkCore;
@@ -28,6 +29,8 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 var app = builder.Build();
 
