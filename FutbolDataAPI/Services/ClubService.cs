@@ -60,5 +60,19 @@ namespace FutbolDataAPI.Services
                 await _clubRepository.SaveChangesAsync();
             }
         }
+
+        public async Task RemovePlayerFromClub(int clubId, int playerId)
+        {
+            Log.Information("Service: Removing player with id {playerId} from club with id {clubId}", playerId, clubId);
+            Log.Information("Service: Adding player with id {playerId} to club with id {clubId}", playerId, clubId);
+            var club = await _clubRepository.GetClubById(clubId);
+            var player = await _playerRepository.GetPlayerById(playerId);
+
+            if (club != null && player != null)
+            {
+                club.Players.Remove(player);
+                await _clubRepository.SaveChangesAsync();
+            }
+        }
     }
 }
