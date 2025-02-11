@@ -322,3 +322,95 @@
 2025-02-11 11:28:44.147 -05:00 [INF] Controller: Getting all clubs
 2025-02-11 11:28:44.262 -05:00 [INF] Service: Getting all clubs
 2025-02-11 11:28:44.272 -05:00 [INF] Repo: Getting all clubs
+2025-02-11 16:32:11.083 -05:00 [INF] Controller: Getting all clubs
+2025-02-11 16:32:11.199 -05:00 [INF] Service: Getting all clubs
+2025-02-11 16:32:11.205 -05:00 [INF] Repo: Getting all clubs
+2025-02-11 16:32:17.765 -05:00 [ERR] Something went wrong: AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[FutbolDataAPI.Models.Club, FutbolDataAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[FutbolDataAPI.Models.DTOs.ClubDTO, FutbolDataAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Club -> ClubDTO
+FutbolDataAPI.Models.Club -> FutbolDataAPI.Models.DTOs.ClubDTO
+
+Type Map configuration:
+Club -> ClubDTO
+FutbolDataAPI.Models.Club -> FutbolDataAPI.Models.DTOs.ClubDTO
+
+Destination Member:
+Players
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PlayerNameDto -> PlayerDTO
+FutbolDataAPI.Models.DTOs.PlayerNameDto -> FutbolDataAPI.Models.DTOs.PlayerDTO
+   at lambda_method130(Closure, PlayerNameDto, PlayerDTO, ResolutionContext)
+   at lambda_method128(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method128(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method128(Closure, Object, IEnumerable`1, ResolutionContext)
+   at FutbolDataAPI.Controllers.ClubController.GetClubs() in C:\Projects\.NET\FutbolDataAPI\FutbolDataAPI\Controllers\ClubController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-02-11 16:37:48.410 -05:00 [INF] Controller: Getting all players
+2025-02-11 16:37:48.549 -05:00 [INF] Service: Getting all players
+2025-02-11 16:37:48.554 -05:00 [INF] Repo: Getting all players
+2025-02-11 16:38:23.140 -05:00 [INF] Controller: Getting all clubs
+2025-02-11 16:38:23.151 -05:00 [INF] Service: Getting all clubs
+2025-02-11 16:38:23.163 -05:00 [INF] Repo: Getting all clubs
+2025-02-11 16:38:24.341 -05:00 [ERR] Something went wrong: AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[FutbolDataAPI.Models.Club, FutbolDataAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[FutbolDataAPI.Models.DTOs.ClubDTO, FutbolDataAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Club -> ClubDTO
+FutbolDataAPI.Models.Club -> FutbolDataAPI.Models.DTOs.ClubDTO
+
+Type Map configuration:
+Club -> ClubDTO
+FutbolDataAPI.Models.Club -> FutbolDataAPI.Models.DTOs.ClubDTO
+
+Destination Member:
+Players
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PlayerNameDto -> PlayerDTO
+FutbolDataAPI.Models.DTOs.PlayerNameDto -> FutbolDataAPI.Models.DTOs.PlayerDTO
+   at lambda_method149(Closure, PlayerNameDto, PlayerDTO, ResolutionContext)
+   at lambda_method147(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method147(Closure, Object, IEnumerable`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method147(Closure, Object, IEnumerable`1, ResolutionContext)
+   at FutbolDataAPI.Controllers.ClubController.GetClubs() in C:\Projects\.NET\FutbolDataAPI\FutbolDataAPI\Controllers\ClubController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-02-11 16:42:45.059 -05:00 [INF] Controller: Getting all clubs
+2025-02-11 16:42:45.237 -05:00 [INF] Service: Getting all clubs
+2025-02-11 16:42:45.243 -05:00 [INF] Repo: Getting all clubs

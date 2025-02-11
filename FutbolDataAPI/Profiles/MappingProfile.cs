@@ -9,6 +9,7 @@ namespace FutbolDataAPI.Profiles
         public MappingProfile()
         {
             CreateMap<Player, PlayerDTO>();
+            CreateMap<Player, PlayerNameDto>();
             CreateMap<Club, ClubDTO>();
         }
     }
