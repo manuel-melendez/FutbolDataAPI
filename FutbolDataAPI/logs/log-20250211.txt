@@ -414,3 +414,9 @@ FutbolDataAPI.Models.DTOs.PlayerNameDto -> FutbolDataAPI.Models.DTOs.PlayerDTO
 2025-02-11 16:42:45.059 -05:00 [INF] Controller: Getting all clubs
 2025-02-11 16:42:45.237 -05:00 [INF] Service: Getting all clubs
 2025-02-11 16:42:45.243 -05:00 [INF] Repo: Getting all clubs
+2025-02-11 16:48:42.396 -05:00 [INF] Controller: Getting all clubs
+2025-02-11 16:48:42.488 -05:00 [INF] Service: Getting all clubs
+2025-02-11 16:48:42.498 -05:00 [INF] Repo: Getting all clubs
+2025-02-11 16:49:30.400 -05:00 [INF] Controller: Getting all players
+2025-02-11 16:49:30.408 -05:00 [INF] Service: Getting all players
+2025-02-11 16:49:30.415 -05:00 [INF] Repo: Getting all players
