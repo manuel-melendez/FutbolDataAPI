@@ -1,4 +1,5 @@
 using FutbolDataAPI.Data;
+using FutbolDataAPI.Extensions;
 using FutbolDataAPI.Repositories;
 using FutbolDataAPI.Services;
 using Microsoft.EntityFrameworkCore;
@@ -42,5 +43,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.ConfigureExceptionHandler(Log.Logger);
 
 app.Run();
