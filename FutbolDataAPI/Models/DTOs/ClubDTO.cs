@@ -7,6 +7,6 @@
         public string StadiumName { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public ICollection<PlayerDTO> Players { get; set; } = new List<PlayerDTO>();
+        public ICollection<PlayerNameDto> Players { get; set; } = new List<PlayerNameDto>();
     }
 }
